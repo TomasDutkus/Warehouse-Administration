@@ -135,6 +135,7 @@ public class WhAdmApp {
         ResultSetMetaData rsmd = rs.getMetaData();
 
         int columnsNumber = rsmd.getColumnCount();
+        System.out.println("Item Name - Code - Quantity - Expiration Date");
 
         while (rs.next()) {
             for (int i = 1; i <= columnsNumber; i++) {
@@ -162,6 +163,7 @@ public class WhAdmApp {
         ResultSetMetaData rsmd = rs.getMetaData();
 
         int columnsNumber = rsmd.getColumnCount();
+        System.out.println("Item Name - Code - Quantity - Expiration Date");
 
         while (rs.next()) {
             for (int i = 1; i <= columnsNumber; i++) {
@@ -191,6 +193,7 @@ public class WhAdmApp {
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
         ResultSetMetaData rsmd = rs.getMetaData();
+        System.out.println("Item Name - Code - Quantity - Expiration Date");
 
         int columnsNumber = rsmd.getColumnCount();
 
@@ -221,6 +224,7 @@ public class WhAdmApp {
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
         ResultSetMetaData rsmd = rs.getMetaData();
+        System.out.println("Item Name - Code - Quantity - Expiration Date");
 
         int columnsNumber = rsmd.getColumnCount();
 
