@@ -1,4 +1,3 @@
-import java.sql.DriverManager;
 import java.util.Scanner;
 
 /**
@@ -11,7 +10,7 @@ public class WhAdmApp {
 
     public static void main(String[] args) throws Exception {
 
-        DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
         boolean quit = false;
         String choice;
